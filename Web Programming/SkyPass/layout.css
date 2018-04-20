@@ -1,0 +1,184 @@
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin:0;
+    height: 100%;
+    
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    float:left;
+    height: 15%;
+    width: 100%;
+    background: #4c4c4c;
+    text-align: center;
+ 	color: white;
+ 	margin :0;
+}
+
+#central {
+    float: left;
+    background: grey;
+    width: 90%;
+    height: 75%;
+	text-align: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+}
+#nav {
+    background: #f1f1f1;
+    width: 10%;
+    height: 70%;
+    float: left;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#login{
+	padding-left :0;
+	float:left;
+    background: grey;
+    width: 90%;
+    height: 75%;
+	text-align: left;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align: center;
+	
+}
+
+
+#footer{
+    text-align: center;
+    font: 20px "Verdana, Arial, Helvetica, sans-serif";
+    height: 11%;
+    width: 100%;
+    background: #4c4c4c;
+    clear: both;
+    margin:0;
+}
+
+
+#img {
+    border-radius: 8px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    margin-left: 15px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+   
+}
+#buttonB {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+
+    border: none;
+    cursor: pointer;
+    width: 13%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+   
+}
+
+
+input[type=text], input[type=password]  {
+    width: 40%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 30 px;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+input[type= number]{
+	  width: 15%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 30 px;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#booking{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 99%;
+    text-align: center;
+}
+
+th, td, tr{
+    border: 1px solid black; 
+    font-size: 20px;
+}
+
+th {
+    background-color: #6495ed;
+}
+
+#error{
+	text-align : center;
+	color : red;
+}
+
+
+
+
+#alert{
+    text-align : center;
+    color : yellow;
+}
+
+
+
+#strength {
+    margin-: 5px;
+}

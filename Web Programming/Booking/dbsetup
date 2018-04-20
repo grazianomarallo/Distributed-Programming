@@ -1,0 +1,16 @@
+drop database s238159;
+create database s238159;
+use s238159;
+Create table members(user varchar(50) primary key, pass varchar(32));
+
+Create table booking(user varchar(50) primary key,  request int, assigned int ,date datetime);
+Create table available_time( av_time int );
+
+
+Insert into members (user,pass) values("a@p.it", md5("pO1"));
+Insert into members (user,pass) values("b@p.it", md5("pO2"));
+Insert into members (user,pass) values("c@p.it", md5("pO3"));
+insert into available_time (av_time) values ("180");
+
+Insert into booking (user,request, assigned, date) Values("a@p.it","120","120", now());
+Insert into booking (user,request, assigned, date) Values("b@p.it","20","20", now());

@@ -1,0 +1,20 @@
+drop database s238159;
+create database s238159;
+use s238159;
+Create table members(user varchar(50) primary key, pass varchar(32));
+
+Create table purchased(user varchar(50) primary key,  p_ticket int , tot_ticket int  );
+Create table gift (gifter varchar(50), gifted varchar(50), num_ticket int);
+
+
+Insert into members (user,pass) values("a@p.it", md5("pa1"));
+Insert into members (user,pass) values("b@p.it", md5("pa2"));
+Insert into members (user,pass) values("c@p.it", md5("pa3"));
+
+
+Insert into purchased (user,p_ticket,tot_ticket) Values("a@p.it","0", "0");
+Insert into purchased (user,p_ticket,tot_ticket) Values("b@p.it","0", "0");
+Insert into purchased (user,p_ticket,tot_ticket) Values("c@p.it","0", "0");
+//Insert into booking (user,second,date) Values("a@p.it","2", now()) on duplicate key update user='a@p.it', date= now();
+
+INSERT INTO gift (gifter,gifted,num_ticket) VALUES ('a@p.it','b@p.it','2') ON DUPLICATE KEY UPDATE gifter='a@p.it', gifted='b@p.it', num_ticket ='2'
